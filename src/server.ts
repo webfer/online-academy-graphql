@@ -1,5 +1,3 @@
-//console.log('Hola bienvenido a la academia!!!!');
-
 import express from 'express';
 import compresion from 'compression';
 import { ApolloServer } from 'apollo-server-express';
