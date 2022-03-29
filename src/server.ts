@@ -15,7 +15,7 @@ async function listen(PORT: number) {
   app.use(compresion());
 
   app.get('/', (req, res) => {
-    res.send('Hola a la academia online en graphQL!!');
+    res.send('Hello to the online academy in graphQL!!');
   });
 
   const httpServer = http.createServer(app);
@@ -37,7 +37,7 @@ async function main() {
   try {
     await listen(PORT);
     console.log(
-      `🚀 Bienvenido  a la academia Online en GraphQL http://localhost:${PORT}/graphql`
+      `🚀 Welcome to the online academy in GraphQL http://localhost:${PORT}/graphql`
     );
   } catch (err) {
     console.error('💀 Error starting the node server', err);
